@@ -1,0 +1,670 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@200;300;400;500;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+*:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    background-color: grey;
+    font-family: Commissioner, sans-serif;
+}
+
+p{
+    color: grey;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-image: url('./images/image-hero-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.header a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.navigation-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    position: absolute;
+    top: 40px;
+    align-items: center;
+    /* left: auto; */
+    border: 2px solid white;
+}
+
+.navigation{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.main-project-section{
+    /* border: 1px solid blue; */
+    border-color: grey;
+    position: relative;
+    width: 800px;
+    height: 300px;
+    margin: 0 auto;
+    top: -90px;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    padding: 0px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+#back-this-project-button{
+    width: 180px;
+    height: auto;
+    padding: 15px;
+    border: 1px solid #3cb4ac;
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    background-color: #3cb4ac;
+    border-radius: 30px;
+}
+
+.main-project-inner-section{
+    position: relative;
+    top: -35px;
+    width: 100%;
+    border-radius: 10px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#bookmark{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid lightgrey;
+    background-color: lightgrey;
+    border-radius: 30px;
+}
+
+#bookmark-text p{
+    font-size: 0.8rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 700;
+    color: grey;
+}
+
+.buttons-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+
+}
+
+.stats-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+    border-color: grey;
+    align-items: center;
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+    top: -60px;
+    border-radius: 10px;
+    background-color: #fff;
+    height: 180px;
+}
+
+.stats{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    justify-content: center;
+}
+
+.stats p, .stats h2{
+    padding: 0px;
+    margin: 0;
+}
+
+.money, .backers, .days-left{
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#scrollbar{
+    width: 95%;
+}
+
+.money{
+    flex-basis: 33.3%;
+    border-right: 3px solid black;
+}
+
+.backers{
+    flex-basis: 33.3%;
+    border-right: 3px solid black;
+}
+
+.days-left{
+    flex-basis: 33.3%;
+}
+
+.about-project{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 800px; 
+    justify-content: center;
+    margin: 0 auto;
+    border: 1px solid grey;
+    position: relative;
+    top: -25px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+#select-reward-button{
+    /* width: 180px; */
+    padding: 15px 25px 15px 25px;
+    border: 1px solid #3cb4ac;
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    background-color: #3cb4ac;
+    border-radius: 30px;
+}
+
+.pledge-condition{
+    color: #3cb4ac;
+}
+
+#about{
+    width: 100%;
+}
+
+#about p{
+    color: grey;
+    line-height: 25px;
+}
+
+.edition-options{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+}
+
+#bamboo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid #adacac;
+    padding: 15px 10px 30px 10px;
+    border-radius: 10px;
+}
+
+#black{
+    border: 1px solid #adacac;
+}
+
+.edition-top, .edition-bottom{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.edition-text-middle{
+    width: 95%;
+    line-height: 25px;
+}
+
+.edition-text{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.edition-top-headers, .edition-bottom-footers{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.edition-bottom-footers{
+    align-items: center;
+}
+
+.edition-bottom-footers p{
+    font-weight: 700;
+}
+
+.edition-bottom-footers span{
+    font-weight: 300;
+}
+
+.amount-left{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.amount-left p{
+    margin-left: 10px;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.amount-left h2{
+    font-weight: 800;
+    font-size: 1.9rem;
+}
+
+.make-grey{
+    background-color: grey !important;
+    border-color: grey !important;
+}
+
+.grid-item{
+    margin-top: 15px;
+}
+
+#black{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 15px 10px 30px 10px;
+    border-radius: 10px;
+}
+
+#mahogany-special{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 15px 10px 30px 15px;
+    opacity: 0.6;
+    border: 1px solid grey;
+    border-radius: 10px;
+
+}
+
+/* Modal Content Styling  */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-content{
+    width: 850px;
+    /* margin: 0; */
+    /* padding: 0; */
+    /* padding: 20px; */
+    /* margin: 0 auto; */
+  }
+
+  .modal-back-project{
+    width: 750px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin: 20px;
+  }
+
+  .modal-edition-top-headers{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .edition-top-left-section, .edition-top-right-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  } 
+
+  .edition-top-left-section{
+    /* width: 410px; */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+  }
+
+  .edition-top-right-section{
+    margin-right: 20px;
+    /* border: 1px solid black; */
+  }
+
+  .edition-top-left-section .pledge-condition{
+    margin-left: 5px;
+  }
+
+  .edition-top-right-section p{
+    margin-left: 5px;
+    
+  }
+
+  .modal-edition-top{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* padding: 15px; */
+    /* border: 1px solid black; */
+  }
+
+  .modal-edition-text{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    /* background-color: pink; */
+    /* border: 1px solid black; */
+  }
+
+  .modal-edition-text-middle{
+    width: 90%;
+    /* border: 1px solid black; */
+  }
+
+  .modal-edition-bottom{
+    /* display: none; */
+    display:none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    padding: 20px;
+  }
+
+  .modal-bottom-left p{
+    color: grey;
+    font-weight: 400;
+  }
+
+  .modal-edition-bottom a:first-child{
+    padding: 15px 35px 15px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: grey;
+    background-color: #fff;
+    font-weight: 700;
+    border: 1px solid grey;
+    margin-left: 10px;
+  }
+
+  .divider{
+    margin-left: 10px;
+    color: black;
+  }
+  .modal-edition-bottom a:last-child{
+    padding: 15px 20px 15px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3cb4ac;
+    margin-left: 15px;
+  }
+
+  .modal-radio{
+    /* border: 1px solid black; */
+    width: 70px;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+  }
+
+  .modal-back-project{
+    flex-basis: 90%;
+  }
+
+  .padded{
+    padding: 20px;
+  }
+
+  .modal-container{
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+  }
+
+  .modal-back-project:last-child{
+    opacity: 0.5;
+  }
+
+  
+/* Modal completed styling */
+  .modal-completed{
+    width: 450px;
+    height: 350px;
+    background-color: #fff;
+    margin: 100px auto;
+    border-radius: 10px;
+  }
+
+  .modal-completed-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    padding: 30px;
+  }
+
+  #got-it{
+    padding: 10px 25px 10px 25px;
+    border: 1px solid #3cb4ac;
+    border-radius: 25px;
+    background-color: #3cb4ac;
+    font-weight: 800;
+    color: #fff;
+  }
+
+  #got-it:hover{
+    cursor: pointer;
+    /* opacity: 0.2; */
+    background-color: rgb(35, 133, 126);
+    border-color: rgb(35, 133, 126);
+  }
+
+  .modal-completed-middle{
+    text-align:center;
+  }
+
+  #hamburger{
+    /* height:auto; */
+    height: 40px;
+    width: 40px;
+  }
+ 
+
+  @media screen and (max-width: 576px){
+    body{
+        background-color: rgb(213,210,210);
+        /* background-color: red; */
+    }
+
+    .navigation-bar{
+      display:flex;
+      flex-direction: row;
+      align-items: center;
+      border: 2px solid white;
+      width: 100%;
+    }
+
+    .navigation{
+      position: relative;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    #hamburger{
+      position: absolute;
+      right:0;
+      top: -20px;
+    }
+
+    #hamburger:hover{
+      cursor: pointer;
+    }
+
+    .navigation-bar{
+      top: 10px;
+    }
+
+    #navigation-menu{
+      display: none;
+      flex-direction: column;
+      border: 2.5px solid #000;
+      position: absolute;
+      width: 100%;
+      top: 20px;
+      align-items: left;
+      z-index: 3;
+    }
+
+    #navigation-menu a{
+      margin: 0;
+      padding: 20px;
+      border-bottom: 1px solid #000;
+      color: #000;
+      font-size: 1.2rem;
+      background-color: #fff;
+    }
+
+    #navigation-menu a:last-child{
+      border-bottom: 0px solid black;
+    }
+
+    #menu-closer{
+      display: none;
+      color: #fff;
+      font-size: 3rem;
+      position: absolute;
+      top: -20px;
+      right: 0;
+      z-index: 4;
+      color: #000;
+      /* border: 1px solid black; */
+    }
+
+    #menu-closer:hover{
+      cursor: pointer;
+    }
+
+    .main-project-section, .main-project-inner-section{
+      width: 100%;
+
+    }
+    #bookmark-text{
+      display: none;
+    }
+
+    #bookmark{
+      /* justify-content: left; */
+      border: 2px solid #000;
+      margin-left: 10px;
+    }
+
+    #bookmark-icon{
+     
+    }
+
+    .buttons-container{
+      border: 1px solid black;
+
+    }
+
+    .buttons{
+      border: 2px solid black;
+      justify-content: center;
+    }
+
+
+
+
+
+
+
+  }

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Crowdfunding product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="navigation-bar">
+      <img src="./images/logo.svg" alt="crowdfund logo">
+
+      <div class="navigation">
+        <img src="./images/icon-hamburger.svg" alt="" id="hamburger">
+        <span id="menu-closer">&times;</span>
+        <div class="navigation-menu" id="navigation-menu">
+          <a href="#">About</a>
+          <a href="#">Discover</a>
+          <a href="#">Get Started</a>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+
+  <div class="main-project-section">
+    <div class="main-project-inner-section">
+    <div class="mastercraft-logo-container">
+      <img src="./images/logo-mastercraft.svg" alt="mastercraft logo" class="mastercraft-logo">
+    </div>
+    
+    <div class="main-section-text">
+      <h2>Mastercraft Bamboo Monitor Riser</h2>
+      <p>A beautiful and handcrafted monitor stand to reduce neck and eye strain</p>
+    </div>
+
+    <div class="buttons-container">
+      <div class="buttons">
+        <a href="#" id="back-this-project-button">Back this project</a>
+
+        <div id="bookmark">
+          <img src="./images/icon-bookmark.svg" id="bookmark-icon" alt="bookmark icon">
+          <div id="bookmark-text"><p>Bookmark</p></div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </div>
+
+  <div class="stats-section">
+    <div class="stats">
+      <div class="money">
+        <h2>$89,914</h2>
+        <p>of $100,000 backed</p>
+      </div>
+      <div class="backers">
+        <h2>5,007</h2>
+        <p>total backers</p>
+      </div>
+      <div class="days-left">
+        <h2>56</h2>
+        <p>days left</p>
+      </div>
+    </div>
+
+    <div id="scrollbar">
+      <p>placeholder for scroll bar</p>
+    </div>
+  </div>
+
+  <div class="about-project">
+
+    <div class="edition-options">
+      <div id="about">
+        <h3>About this project</h3>
+        <p>The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen 
+          to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve 
+          your posture and make you more comfortable while at work, helping you stay focused on the task at hand.</p>
+        <p>Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer 
+          to allow notepads, pens, and USB sticks to be stored under the stand.</p>
+      </div>
+
+      <div id="bamboo" class="grid-item">
+        <div class="edition-top">
+          <div class="edition-top-headers">
+            <h3>Bamboo Stand</h3>
+
+          <h3 class="pledge-condition">Pledge $25 or more</h3>
+          </div>
+        </div>
+
+        <div class="edition-text">
+          <div class="edition-text-middle">
+            <p> You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and 
+              you’ll be added to a special Backer member list.</p>
+          </div>
+        </div>
+
+        <div class="edition-bottom">
+          <div class="edition-bottom-footers">
+            <div class="amount-left">
+              <h2>101</h2>
+              <p>left</p>
+            </div>
+            <!-- <h2>101<span>left</span></h2> -->
+
+            <a id="select-reward-button">Select reward</a>
+          </div>
+       </div>
+      </div>
+      <div id="black" class="grid-item">
+        <div class="edition-top">
+          <div class="edition-top-headers">
+            <h3>Black Edition Stand</h3>
+
+          <h3 class="pledge-condition">Pledge $75 or more</h3>
+          </div>
+        </div>
+
+        <div class="edition-text">
+          <div class="edition-text-middle">
+            <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer 
+              member list. Shipping is included.</p>
+
+              <button id="modalBtn">Open Modal</button>
+          </div>
+        </div>
+
+        <div class="edition-bottom">
+          <div class="edition-bottom-footers">
+            <div class="amount-left">
+              <h2>64</h2>
+              <p>left</p>
+            </div>
+
+            <a id="select-reward-button">Select reward</a>
+          </div>
+       </div>
+      </div>
+      <div id="mahogany-special" class="grid-item">
+        <div class="edition-top">
+          <div class="edition-top-headers">
+            <h3>Mahogany Special Stand</h3>
+
+          <h3 class="pledge-condition" id="pledge-200">Pledge $200 or more</h3>
+          </div>
+        </div>
+
+        <div class="edition-text">
+          <div class="edition-text-middle">
+            <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added 
+              to our Backer member list. Shipping is included.</p>
+          </div>
+        </div>
+
+        <div class="edition-bottom">
+          <div class="edition-bottom-footers">
+            <div class="amount-left">
+              <h2>0</h2>
+              <p>left</p>
+            </div>
+
+            <a id="select-reward-button" class="make-grey">Out of stock</a>
+          </div>
+       </div>
+      </div>
+    </div>
+  </div>
+
+<div id="modal" class="modal">
+
+  <!-- <div class="modal-content">
+    <span class="close" id="modalCloser">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div> -->
+
+
+
+  <div class="modal-content">
+    <span class="close" id="modalCloser">&times;</span>
+
+  
+        <!-- <div class="modal-edition-container"> -->
+
+      <div class="modal-container">
+
+          
+          <div class="modal-back-project padded">
+          
+            <div class="modal-edition-top">
+              <!-- <div class="modal-edition-top-headers"> -->
+                <div class="edition-top-left-section">
+                  <h2>Back this project</h2>
+                </div>       
+              <!-- </div> -->
+            </div>
+  
+            <div class="modal-edition-text">
+                <p> You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and 
+                  you’ll be added to a special Backer member list.</p>
+            </div>
+  
+            <!-- <div class="edition-bottom">
+              <div class="edition-bottom-footers">
+                <div class="amount-left">
+                  <h2>101</h2>
+                  <p>left</p>
+                </div>
+  
+                <a id="select-reward-button">Select reward</a>
+              </div>
+          </div> -->
+  
+        </div>
+          
+          <!-- HTML FOR BAMBOO EDITION ========================================================================================= -->
+          <div class="modal-back-project" id="modal-item-container">
+          
+            <div class="modal-edition-top">
+              <!-- <div class="modal-edition-top-headers"> -->
+                <div class="edition-top-left-section">
+                  <div class="modal-radio">
+                    <input type="radio" name="#" id="modal-no-radio">
+                  </div>
+        
+                  <!-- <h3>Black Edition Stand</h3> -->
+                  <h3 class="pledge-condition">Pledge with no reward</h3>
+                </div>
+  
+                <div class="edition-top-right-section">
+                  <h2></h2>
+                  <p></p>
+                </div>          
+              <!-- </div> -->
+            </div>
+  
+            <div class="modal-edition-text">
+              <div class="modal-edition-text-middle">
+                <p> You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and 
+                  you’ll be added to a special Backer member list.</p>
+              </div>
+            </div>
+
+            <div class="modal-edition-bottom" id="no-reward">
+              <div class="modal-bottom-left">
+                <p>Enter your pledge</p>
+              </div>
+              <div class="modal-bottom-right">
+                <a href="#" id="noreward-value">$<span class="divider">25</span></a>
+                <a href="#" id="noreward-continue">Continue</a>
+              </div>
+            </div>
+  
+            <!-- <div class="edition-bottom">
+              <div class="edition-bottom-footers">
+                <div class="amount-left">
+                  <h2>101</h2>
+                  <p>left</p>
+                </div>
+  
+                <a id="select-reward-button">Select reward</a>
+              </div>
+          </div> -->
+  
+        </div>
+        <!-- </div> -->
+
+        <div class="modal-back-project" id="modal-item-container">
+          
+          <div class="modal-edition-top">
+            <!-- <div class="modal-edition-top-headers"> -->
+              <div class="edition-top-left-section">
+                <div class="modal-radio">
+                  <input type="radio" name="#" id="modal-bamboo-radio">
+                </div>
+      
+                <h3>Bamboo Stand</h3>
+                <h3 class="pledge-condition">Pledge $25 or more</h3>
+              </div>
+
+              <div class="edition-top-right-section">
+                <h2>101</h2>
+                <p>left</p>
+              </div>          
+            <!-- </div> -->
+          </div>
+
+          <div class="modal-edition-text">
+            <div class="modal-edition-text-middle">
+              <p> You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and 
+                you’ll be added to a special Backer member list.</p>
+            </div>
+          </div>
+
+          <div class="modal-edition-bottom" id="bamboo-reward">
+            <div class="modal-bottom-left">
+              <p>Enter your pledge</p>
+            </div>
+            <div class="modal-bottom-right">
+              <a href="#" id="bamboo-value">$<span class="divider">25</span></a>
+              <a href="#" id="bamboo-continue">Continue</a>
+            </div>
+          </div>
+
+
+          <!-- <div class="edition-bottom">
+            <div class="edition-bottom-footers">
+              <div class="amount-left">
+                <h2>101</h2>
+                <p>left</p>
+              </div>
+
+              <a id="select-reward-button">Select reward</a>
+            </div>
+        </div> -->
+
+      </div>
+
+      <div class="modal-back-project" id="modal-item-container">
+          
+        <div class="modal-edition-top">
+          <!-- <div class="modal-edition-top-headers"> -->
+            <div class="edition-top-left-section">
+              <div class="modal-radio">
+                <input type="radio" name="#" id="modal-black-radio">
+              </div>
+    
+              <h3>Black Edition Stand</h3>
+              <h3 class="pledge-condition">Pledge $75 or more</h3>
+            </div>
+
+            <div class="edition-top-right-section">
+              <h2>64</h2>
+              <p>left</p>
+            </div>          
+          <!-- </div> -->
+        </div>
+
+        <div class="modal-edition-text">
+          <div class="modal-edition-text-middle">
+            <p> You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and 
+              you’ll be added to a special Backer member list.</p>
+          </div>
+        </div>
+
+        <div class="modal-edition-bottom" id="black-reward">
+          <div class="modal-bottom-left">
+            <p>Enter your pledge</p>
+          </div>
+          <div class="modal-bottom-right">
+            <a href="#" id="black-value">$<span class="divider">75</span></a>
+            <a href="#" id="black-continue">Continue</a>
+          </div>
+        </div>
+
+
+        <!-- <div class="edition-bottom">
+          <div class="edition-bottom-footers">
+            <div class="amount-left">
+              <h2>101</h2>
+              <p>left</p>
+            </div>
+
+            <a id="select-reward-button">Select reward</a>
+          </div>
+      </div> -->
+
+    </div>
+
+    <div class="modal-back-project" id="modal-item-container">
+          
+      <div class="modal-edition-top">
+        <!-- <div class="modal-edition-top-headers"> -->
+          <div class="edition-top-left-section">
+            <div class="modal-radio">
+              <input type="radio" name="#" id="modal-mahogany-radio">
+            </div>
+  
+            <h3>Mahogany Edition Stand</h3>
+            <h3 class="pledge-condition">Pledge $200 or more</h3>
+          </div>
+
+          <div class="edition-top-right-section">
+            <h2>0</h2>
+            <p>left</p>
+          </div>          
+        <!-- </div> -->
+      </div>
+
+      <div class="modal-edition-text">
+        <div class="modal-edition-text-middle">
+          <p> You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and 
+            you’ll be added to a special Backer member list.</p>
+        </div>
+      </div>
+
+      <div class="modal-edition-bottom" id="mahogany-reward">
+        <div class="modal-bottom-left">
+          <p>Enter your pledge</p>
+        </div>
+        <div class="modal-bottom-right">
+          <a href="#" id="mahogany-value">$<span class="divider">200</span></a>
+          <a href="#" id="mahogany-continue">Continue</a>
+        </div>
+      </div>
+
+
+      <!-- <div class="edition-bottom">
+        <div class="edition-bottom-footers">
+          <div class="amount-left">
+            <h2>101</h2>
+            <p>left</p>
+          </div>
+
+          <a id="select-reward-button">Select reward</a>
+        </div>
+    </div> -->
+
+  </div>
+
+</div>
+
+  </div>
+
+
+</div>
+
+
+<div class="modal" id="modal-2">
+
+  <div class="modal-completed" id="modal-completed">
+    <!-- <span class="close" id="modalCompletedCloser">&times;</span> -->
+
+      <div class="modal-completed-container">
+        <div class="modal-completed-top">
+          <img src="./images/icon-check.svg" alt="">
+        </div>
+        <div class="modal-completed-middle">
+          <h2>Lorem, ipsum dolor Lorem</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, veniam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sint atque mollitia iste blanditiis quos quaerat ad perspiciatis amet optio?</p>
+        </div>
+        <div class="modal-completed-bottom">
+          <button id="got-it">Got it</button>
+        </div>
+      </div>
+
+
+  </div>
+
+</div>
+  
+  <script src="./index.js"></script>
+</body>
+</html>
